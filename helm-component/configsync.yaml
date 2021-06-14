@@ -4,7 +4,9 @@ hydration:
   steps:
   - tool: helm
     version: 3.5.4
-    args: ["template", "my-cert-manager", "cert-manager/", "--namespace", "cert-manager"]
+    inputDir: cert-manager
+    chartName: my-cert-manager
+    args: ["--namespace", "cert-manager"]
 #  - tool: helm
 #    version: 3.5.4
 #    args: ["template", "my-istio", "istio/", "--namespace", "istio"]
