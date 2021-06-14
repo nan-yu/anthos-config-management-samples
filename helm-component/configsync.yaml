@@ -1,0 +1,15 @@
+apiVersion: configsync.gke.io/v1alpha1
+kind: Config
+hydration:
+  steps:
+  - tool: helm
+    version: 3.5.4
+    args: ["template", "my-cert-manager", "cert-manager/", "--namespace", "cert-manager"]
+#  - tool: helm
+#    version: 3.5.4
+#    args: ["template", "my-istio", "istio/", "--namespace", "istio"]
+#  - tool: kustomize
+#    version: 4.1.2
+#    args: ["build", "namespace-policy/"]
+
+
