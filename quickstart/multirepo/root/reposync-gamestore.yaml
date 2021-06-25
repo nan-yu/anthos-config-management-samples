@@ -16,7 +16,7 @@ spec:
     dir: quickstart/multirepo/namespaces/gamestore
     # We recommend securing your source repository.
     # Other supported auth: `ssh`, `cookiefile`, `token`, `gcenode`.
-    auth: none
+    auth: ssh
     # Refer to a Secret you create to hold the private key, cookiefile, or token.
-    # secretRef:
-    #   name: SECRET_NAME
+    secretRef:
+      name: ns-gamestore-ssh-key
