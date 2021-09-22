@@ -20,4 +20,5 @@ bases:
 resources:
 - pod-creator-clusterrole.yaml
 - pod-creator-rolebinding.yaml
+- root-sync.yaml
 # [END anthos_config_management_multi_environments_kustomize_config_source_base_kustomization] 

@@ -1,0 +1,13 @@
+apiVersion: configsync.gke.io/v1beta1
+kind: RootSync
+metadata:
+  name: root-sync
+  namespace: config-management-system
+spec:
+  git:
+    auth: none
+    branch: root-repo-circular-dependency
+    dir: multi-environments-kustomize/config-source/overlays/dev
+    repo: https://github.com/nan-yu/anthos-config-management-samples
+    revision: HEAD
+  sourceFormat: unstructured
